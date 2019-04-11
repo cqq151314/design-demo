@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #fff!important;
+    padding: 10px;
+}
+
+.startPage {
+    text-align: center;
+    line-height: 100vh;
+    font-size: 30px;
+    color: red;
+}
+
+h1 {
+    padding-left: 10px;
+}
+
+ul {
+    padding: 35px 10px 0 10px;
+}
+
+li {
+    line-height: 30px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 13px;
+    padding-left: 18px;
+    list-style-position: inside;
+    margin-bottom: 15px;
+}
+
+#pg{
+    background: #fff;
+    margin: 25px 0 20px 0;
+}
+
+#member {
+    border: 1px solid burlywood;
+    border-radius: 3px;
+    padding: 5px 15px;
+    display: block;
+    width: 50px;
+    background: burlywood;
+    color: #fff;
+    cursor: pointer;
+}
