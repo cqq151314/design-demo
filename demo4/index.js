@@ -18,14 +18,7 @@
             document.getElementById("member").style.display="block";
             document.getElementById("style" +Index).style.display="none";
             clearInterval(timer);
-            var pg = document.getElementById('pg');
-            var cc = document.getElementById('cc');
-            console.log(cc, 99999);
-            pg.value = 0;
-            var timer = setInterval(function(e){
-                if(pg.value!=20) pg.value++;
-                else Index < hrefList.length ? pg = 20 : computeTime();
-            },1000);
+            history.go(0)
         } else if(Index < hrefList.length) {
             document.getElementById("word").style.display="block";
             document.getElementById("member").style.display="block";
