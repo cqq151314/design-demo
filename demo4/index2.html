@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <title>index1</title>
     <link rel="stylesheet" type="text/css" href="../index.css">
+    <link href="https://unpkg.com/video.js/dist/video-js.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/video.js/dist/video.min.js"></script>
 </head>
 <body>
     <!-- <embed src="../20.mp3" hidden="false" autostart="true" style="height: 0px"/> -->
      <!-- <embed src="../20.mp3" hidden="false" autostart="true" style="height: 0px"/> -->
-     <audio src="../20.mp3" muted autoplay id="myaudio"></audio>
+     <!-- <audio src="../20.mp3" muted autoplay id="myaudio"></audio> -->
     <h1 id="word">
         <a>success</a>
     </h1>
@@ -22,33 +24,25 @@
     <progress max="20" value="0" id="pg">111</progress>
     <embed src="../20.mp3" hidden="false" autostart="true" style="height: 0px"/>
     <div onclick="aa()" id="member">记住了</div>
+    <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="264">
+        <source src="../20.mp3" type="video/mp4">
+      </video>
 </body>
 <script src="index.js"></script>
 <script>
-        /*
-        * muted 静音
-        * autoplay 自动播放
-        * loop 循环播放
-        */
-        var audio = document.getElementById('myaudio');
-        var t1 = 1000;//如果是轮询，这个时间必须大于音频的长度。如果是webscoket，应该设置一个状态play，避免重复播放，如下：
-        var t2 = 20000;//音频的长度，确保能够完整的播放给用户
-        var play = false;
-        function run(){
-            if(play){
-                return false;
-            }
-            audio.currentTime = 0;//设置播放的音频的起始时间
-            audio.volume = 0.5;//设置音频的声音大小
-            audio.muted = false;//关闭静音状态
-            play = true;
-            setTimeout(function(){
-                play = false;
-                audio.muted = true;//播放完毕，开启静音状态
-            },t2);
-        }
-        setInterval(function(){
-            run();//假装在轮询服务器，或者从websocket拉取数据
-        },t1);
-        </script>
+    var player = videojs("example_video_1", { controls : true }, function onPlayerReady() {
+    videojs.log("播放器已经准备好了!");
+    //   console.log(this, 'this');
+    
+    // In this context, `this` is the player that was created by Video.js.<br>  // 注意，这个地方的上下文， `this` 指向的是Video.js的实例对像player
+    //   this.play();
+    
+    // How about an event listener?<br>  // 如何使用事件监听？
+    this.on("ended", function() {
+        videojs.log("播放结束了!");
+    });
+    });
+    console.log(player, 'player');
+    player.play();
+    </script>
 </html>
