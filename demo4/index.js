@@ -14,11 +14,8 @@
             document.getElementById("member").style.display="none";
             document.getElementById("style" +Index).style.display="block";
         } else if(state == "false") {
-            document.getElementById("word").style.display="block";
-            document.getElementById("member").style.display="block";
-            document.getElementById("style" +Index).style.display="none";
             clearInterval(timer);
-            history.go(0)
+            history.go(0);
         } else if(Index < hrefList.length) {
             document.getElementById("word").style.display="block";
             document.getElementById("member").style.display="block";
