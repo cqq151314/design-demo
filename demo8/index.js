@@ -4,8 +4,8 @@
     clearInterval(timer);
     var pg = document.getElementById('pg');
     var timer = setInterval(function(e){
-        if(pg.value!=20) pg.value++;
-        else Index < hrefList.length ? pg = 20 : computeTime();
+        if(pg.value!=5) pg.value++;
+        else Index < hrefList.length ? pg = 5 : computeTime();
     },1000);
 
     function aa (state) {
