@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>5s音频</title>
+    <link rel="stylesheet" type="text/css" href="../index.css">
+</head>
+<body>
+    <div onclick="aa()" class="startPage">开始背单词吧</div>
+</body>
+<script>
+    function aa() {
+        sessionStorage.removeItem('time');
+        sessionStorage.setItem('time', new Date().getTime());
+        window.location.href = "index1.html";
+    };
+</script>
+</html>

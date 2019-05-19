@@ -4,8 +4,20 @@
 }
 
 body {
-    background: #fff!important;
-    padding: 10px;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.laba {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px
 }
 
 .startPage {
@@ -17,6 +29,11 @@ body {
 
 h1 {
     padding-left: 10px;
+    /* margin-top: 30%!important; */
+}
+
+h1>a {
+    font-size: 55px;
 }
 
 ul {
@@ -24,13 +41,16 @@ ul {
 }
 
 li {
-    line-height: 30px;
+    line-height: 45px;
     cursor: pointer;
     border: 1px solid #ccc;
-    border-radius: 13px;
-    padding-left: 18px;
+    border-radius: 20px;
+    padding-left: 20px;
     list-style-position: inside;
     margin-bottom: 15px;
+    text-align: left;
+    font-size: 18px;
+    width: 220px;
 }
 
 #pg{
@@ -39,12 +59,24 @@ li {
 }
 
 #member {
-    border: 1px solid burlywood;
+    border: 2px solid green;
     border-radius: 3px;
     padding: 5px 15px;
     display: block;
-    width: 50px;
-    background: burlywood;
-    color: #fff;
+    width: 125px;
+    background: #fff;
+    color: #000;
     cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#pg{
+    vertical-align: middle;
+    margin-right: 5px;
+    height: 5px;
+}
+#percent {
+    vertical-align: middle;
 }
