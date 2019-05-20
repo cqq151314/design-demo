@@ -3,14 +3,16 @@
     const Index = window.location.href.split("index")[1][0];
     clearInterval(timer);
     var pg = document.getElementById('pg');
+    var percent = document.getElementById('percent');
     var timer = setInterval(function(e){
-        if(pg.value!=5) pg.value++;
-        else Index < hrefList.length ? pg = 5 : computeTime();
+        if(pg.value!=10) pg.value++;
+        else Index < hrefList.length ? pg = 10 : computeTime();
+        percent.innerHTML = pg.value || 10
     },1000);
-
+    
     function aa (state) {
         if(!state) {
-            document.getElementById("word").style.display="none";
+            document.getElementById("word").style.display="none"
             document.getElementById("member").style.display="none";
             document.getElementById("style" +Index).style.display="block";
         } else if(state == "false") {

@@ -79,4 +79,11 @@ li {
 }
 #percent {
     vertical-align: middle;
+    vertical-align: sub;
+    width: 25px;
+    line-height: 25px;
+    background: #827a7c;
+    display: inline-block;
+    border-radius: 20px;
+    color: #fff;
 }
