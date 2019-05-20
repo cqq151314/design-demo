@@ -87,3 +87,57 @@ li {
     border-radius: 20px;
     color: #fff;
 }
+
+#box {
+    position: relative;
+    height: 15px;
+    width: 112px;
+    margin-left: 28px
+}
+
+#top {
+    /* width: 40px; */
+    text-align: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 30px;
+    line-height: 30px
+}
+
+#hover{
+    font-size: 30px;
+    position: absolute;
+    pointer-events: none;
+    top:0;
+    left:0;
+    color:red;
+    overflow: hidden;
+    /* width: 40px; */
+    text-align: left;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    line-height: 30px
+}
+ 
+.over{
+    animation: test;
+    animation-duration: 10s;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-iteration-count:1;
+    animation-direction:normal; 
+}
+
+@keyframes
+test{
+    0%{
+        width:0px;
+    }
+    100% {
+        width:100%;
+    }
+}
