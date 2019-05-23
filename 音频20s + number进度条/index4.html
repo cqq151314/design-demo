@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="../index.css">
 </head>
 <body>
+<div>
+    <img src="../laba.jpeg" class="laba"/>
     <h1 id="word">
         <a>单词四</a>
     </h1>
@@ -16,11 +18,13 @@
         <li onclick="aa('false')">单词</li>
         <li onclick="aa('false')">单词</li>
     </ul>
-    <progress max="10" value="0" id="pg">111</progress>
-    <div style="margin-top: '100px'; position: relative;">
-        <audio autoplay src="../10.mp3"  style="height: 2px; position: absolute;"/>
-    </div>
+    <progress max="10" value="0" id="pg" style="display: none">111</progress>
+    <span style="vertical-align: sub" id="percent">0</span>
     <div onclick="aa()" id="member">记住了</div>
+    <div style="margin-top: '100px'; position: relative;">
+        <audio autoplay src="../20.mp3"  style="height: 2px; position: absolute;"/>
+    </div>
+</div>
 </body>
 <script src="index.js"></script>
 </html>
