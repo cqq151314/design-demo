@@ -1,12 +1,12 @@
 
     const hrefList = ['index1.html', 'index2.html', 'index3.html', 'index4.html', 'index5.html'];
     const Index = window.location.href.split("index")[1][0];
-    clearInterval(timer);
-    var pg = document.getElementById('pg');
-    var timer = setInterval(function(e){
-        if(pg.value!=10) pg.value++;
-        else Index < hrefList.length ? pg = 10 : computeTime();
-    },1000);
+    // clearInterval(timer);
+    // var pg = document.getElementById('pg');
+    // var timer = setInterval(function(e){
+    //     if(pg.value!=10) pg.value++;
+    //     else Index < hrefList.length ? pg = 10 : computeTime();
+    // },1000);
 
     function aa (state) {
         if(!state) {
@@ -14,7 +14,7 @@
             document.getElementById("member").style.display="none";
             document.getElementById("style" +Index).style.display="block";
         } else if(state == "false") {
-            clearInterval(timer);
+            // clearInterval(timer);
             history.go(0);
         } else if(Index < hrefList.length) {
             document.getElementById("word").style.display="block";
