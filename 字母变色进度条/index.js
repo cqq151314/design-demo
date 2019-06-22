@@ -1,13 +1,13 @@
 
     const hrefList = ['index1.html', 'index2.html', 'index3.html', 'index4.html', 'index5.html'];
     const Index = window.location.href.split("index")[1][0];
-    // clearInterval(timer);
-    // var pg = document.getElementById('pg');
+    clearInterval(timer);
+    var num = 0;
     // var width = document.getElementById('width');
-    // var timer = setInterval(function(e){
-    //     if(pg.value!=20) pg.value++;
-    //     else Index < hrefList.length ? pg = 20 : computeTime();
-    // },1000);
+    var timer = setInterval(function(e){
+        if(num!=10) num++;
+        else Index < hrefList.length ? aa() : computeTime();
+    },1000);
 
     function aa (state) {
         if(!state) {

@@ -33,7 +33,7 @@ h1 {
 }
 
 h1>a {
-    font-size: 55px;
+    font-size: 45px;
 }
 
 ul {
@@ -82,10 +82,10 @@ li {
     vertical-align: sub;
     width: 25px;
     line-height: 25px;
-    background: #827a7c;
     display: inline-block;
     border-radius: 20px;
-    color: #fff;
+    color: #000;
+    margin-top: 20px;
 }
 
 #box {
@@ -100,7 +100,7 @@ li {
     text-align: left;
     position: absolute;
     left: 0;
-    top: 0;
+    top: -30px;
     font-size: 30px;
     line-height: 30px
 }
@@ -113,12 +113,11 @@ li {
     left:0;
     color:red;
     overflow: hidden;
-    /* width: 40px; */
     text-align: left;
     height: 30px;
     position: absolute;
     left: 0;
-    top: 0;
+    top: -30px;
     background: #fff;
     line-height: 30px
 }
