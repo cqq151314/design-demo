@@ -2,19 +2,22 @@
     const hrefList = ['index1.html', 'index2.html', 'index3.html', 'index4.html', 'index5.html'];
     const Index = window.location.href.split("index")[1][0];
     clearInterval(timer);
+    var flag = 0;
     var pg = document.getElementById('pg');
     var percent = document.getElementById('percent');
     var timer = setInterval(function(e){
         if(pg.value!=10) pg.value++;
-        else Index < hrefList.length ? pg = 10 : computeTime();
+        else Index < hrefList.length ? flag === 0 ? aa() : aa("false") : computeTime();
         percent.innerHTML = pg.value || 10
     },1000);
 
     function aa (state) {
         if(!state) {
-            document.getElementById("word").style.display="none";
+            pg.value = 0;
+            document.getElementById("word").style.display="none"
             document.getElementById("member").style.display="none";
             document.getElementById("style" +Index).style.display="block";
+            flag = 1;
         } else if(state == "false") {
             clearInterval(timer);
             history.go(0);
