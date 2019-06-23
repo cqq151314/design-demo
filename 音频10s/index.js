@@ -4,7 +4,6 @@
     clearInterval(timer);
     var flag = 0;
     var num = 0;
-    // var width = document.getElementById('width');
     var timer = setInterval(function(e){
         if(num!=10) num++;
         else Index < hrefList.length ? flag === 0 ? aa() : aa("false") : computeTime();
