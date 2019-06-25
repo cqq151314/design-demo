@@ -1,5 +1,5 @@
 
-    const hrefList = ['index1.html', 'index2.html', 'index3.html', 'index4.html', 'index5.html'];
+    const hrefList = ['index1.html', 'index2.html', 'index3.html', 'index4.html', 'index5.html', 'index6.html', 'index7.html', 'index8.html', 'index9.html', 'index10.html', 'index11.html', 'index12.html', 'index13.html', 'index14.html', 'index15.html', 'index16.html'];
     const Index = window.location.href.split("index")[1][0];
     var flag = 0;
     clearInterval(timer);
