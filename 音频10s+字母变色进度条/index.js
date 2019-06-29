@@ -21,9 +21,9 @@
             history.go(0);
             clearInterval(timer);
         } else if(Index < hrefList.length) {
+            window.location.href= hrefList[Index];
             document.getElementById("word").style.display="block";
             document.getElementById("member").style.display="block";
-            window.location.href= hrefList[Index];
         } else {
             computeTime();
         }
