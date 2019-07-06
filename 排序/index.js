@@ -13,7 +13,7 @@ function aa (state) {
         document.getElementById("word").style.display="block";
         document.getElementById("member").style.display="block";
         window.location.href= hrefList[Index];
-    } else {
+    } else if(Index === '16' && state){
         computeTime();
     }
 }
