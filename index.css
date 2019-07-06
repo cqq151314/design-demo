@@ -33,7 +33,7 @@ h1 {
 }
 
 h1>a {
-    font-size: 45px;
+    font-size: 30px;
 }
 
 ul {
@@ -49,8 +49,9 @@ li {
     list-style-position: inside;
     margin-bottom: 15px;
     text-align: left;
-    font-size: 18px;
+    font-size: 30px;
     width: 220px;
+    font-weight: bold;
 }
 
 #pg{
@@ -70,6 +71,7 @@ li {
     text-align: center;
     margin: 0 auto;
     margin-top: 30px;
+    font-weight: bold;
 }
 
 #pg{
@@ -90,9 +92,9 @@ li {
 
 #box {
     position: relative;
-    height: 15px;
     width: 112px;
-    margin-left: 28px
+    margin-left: 28px;
+    top: -8px;
 }
 
 #top {
