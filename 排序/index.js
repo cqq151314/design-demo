@@ -10,9 +10,10 @@ function aa (state) {
     } else if(state == "false") {
         history.go(0);
     } else if(Index < hrefList.length) {
+        window.location.href= hrefList[Index];
+        document.getElementById("style" +Index).style.display="none";
         document.getElementById("word").style.display="block";
         document.getElementById("member").style.display="block";
-        window.location.href= hrefList[Index];
     } else if(Index === '16' && state){
         computeTime();
     }
