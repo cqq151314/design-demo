@@ -7,7 +7,7 @@
     // var width = document.getElementById('width');
     var timer = setInterval(function(e){
         if(num!=10) num++;
-        else Index < hrefList.length ? flag === 0 ? aa() : aa("false") : computeTime();
+        else flag === 0 ? aa() : aa("false");
     },1000);
 
     function aa (state) {

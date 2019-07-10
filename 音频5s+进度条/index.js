@@ -7,7 +7,7 @@
     var percent = document.getElementById('percent');
     var timer = setInterval(function(e){
         if(pg.value!=10) pg.value++;
-        else Index < hrefList.length ? flag === 0 ? aa() : aa("false") : computeTime();
+        else flag === 0 ? aa() : aa("false");
         percent.innerHTML = pg.value || 10
     },1000);
     
